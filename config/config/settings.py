@@ -25,7 +25,10 @@ SECRET_KEY = 'uzd=3y=-i189@)j8frgkm-nd*%8sn6w$+=yjeq^e12r)pgoxlc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "piyushnagar.dpdns.org",
+    "your-render-service.onrender.com",
+]
 
 
 # Application definition
