@@ -1,99 +1,101 @@
 {% extends "base.html" %}
 
 {% block title %}
-Contact | Piyush
+Contact | Piyush Portfolio
 {% endblock %}
 
 {% block content %}
 
-<div class="container py-5">
+<section class="contact-page">
 
-    <!-- Page Heading -->
-    <div class="text-center mb-5">
+    <div class="container">
 
-        <h1 class="display-4 fw-bold">
-            Contact Me
-        </h1>
+        <!-- HEADER -->
 
-        <p class="lead text-secondary">
-            Want to get in touch? I'd love to hear from you.
-        </p>
+        <div class="contact-header text-center">
 
-    </div>
+            <span class="section-kicker">
+                GET IN TOUCH
+            </span>
+
+            <h1>
+                Let's <span>Connect</span>
+            </h1>
+
+            <p>
+                Want to connect or have an idea?
+                Feel free to reach me through the options below.
+            </p>
+
+        </div>
 
 
-    <!-- Contact Cards -->
-    <div class="row justify-content-center g-4">
+        <!-- CONTACT CARDS -->
+
+        <div class="row justify-content-center g-4">
 
 
-        <!-- Email Card -->
-        <div class="col-md-6 col-lg-5">
+            <!-- EMAIL -->
 
-            <div class="card shadow-sm border-0 h-100">
+            <div class="col-md-6 col-lg-5">
 
-                <div class="card-body text-center p-5">
+                <div class="contact-simple-card">
 
-                    <div class="display-3 mb-4">
-                        📧
+                    <div class="contact-simple-icon">
+                        ✉️
                     </div>
 
-                    <h3 class="fw-bold mb-3">
+                    <span>
+                        EMAIL
+                    </span>
+
+                    <h3>
                         Email Me
                     </h3>
 
-                    <p class="text-secondary">
-                        You can reach me at:
+                    <p>
+                        For questions, ideas or collaboration,
+                        you can reach me through email.
                     </p>
 
-                    <p class="fs-5 fw-semibold">
+                    <a href="mailto:piyushnagar.pn@gmail.com">
                         piyushnagar.pn@gmail.com
-                    </p>
-
-                    <a
-                        href="mailto:piyushnagar.pn@gmail.com"
-                        class="btn btn-primary btn-lg mt-3">
-
-                        Send Email
-
                     </a>
 
                 </div>
 
             </div>
 
-        </div>
 
+            <!-- WHATSAPP -->
 
-        <!-- WhatsApp Card -->
-        <div class="col-md-6 col-lg-5">
+            <div class="col-md-6 col-lg-5">
 
-            <div class="card shadow-sm border-0 h-100">
+                <div class="contact-simple-card">
 
-                <div class="card-body text-center p-5">
-
-                    <div class="display-3 mb-4">
+                    <div class="contact-simple-icon">
                         💬
                     </div>
 
-                    <h3 class="fw-bold mb-3">
-                        WhatsApp
+                    <span>
+                        WHATSAPP
+                    </span>
+
+                    <h3>
+                        Chat With Me
                     </h3>
 
-                    <p class="text-secondary">
-                        You can contact me on WhatsApp:
-                    </p>
-
-                    <p class="fs-5 fw-semibold">
-                        +91 73402 70051
+                    <p>
+                        You can contact me directly on WhatsApp
+                        for a quick conversation.
                     </p>
 
                     <a
                         href="https://wa.me/917340270051"
                         target="_blank"
-                        class="btn btn-success btn-lg mt-3">
-
-                        Message on WhatsApp
-
+                        rel="noopener noreferrer"
+                    >
+                        +91 7340270051 →
                     </a>
 
                 </div>
@@ -103,8 +105,27 @@ Contact | Piyush
         </div>
 
 
+        <!-- BOTTOM GLASS -->
+
+        <div class="contact-bottom-glass text-center">
+
+            <span class="section-kicker">
+                PIYUSH.DEV
+            </span>
+
+            <h2>
+                Keep Learning.
+                Keep Building.
+            </h2>
+
+            <p>
+                Thanks for visiting my portfolio.
+            </p>
+
+        </div>
+
     </div>
 
-</div>
+</section>
 
 {% endblock %}

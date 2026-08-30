@@ -1,163 +1,172 @@
-
-
 <!DOCTYPE html>
-
 <html lang="en">
 
-
-
 <head>
+    {% load static %}
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{% block title %}Piyush Portfolio{% endblock %}</title>
-
- 
 
     <!-- Bootstrap CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
+    <!-- Custom 3D Glassmorphism CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <link rel="icon" type="image/png" href="{% static 'fav.png' %}">
 </head>
-
-
 
 <body>
 
+    <!-- =====================================================
+         3D FLOATING BACKGROUND
+         ===================================================== -->
+
+    <div class="scene-3d" aria-hidden="true">
+
+        <!-- Floating glass orbs -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <!-- Floating glass cubes -->
+        <div class="cube cube-1"></div>
+        <div class="cube cube-2"></div>
+
+        <!-- 3D rings -->
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+
+        <!-- Perspective floor -->
+        <div class="grid-3d"></div>
+
+    </div>
 
 
-    <!-- NAVBAR -->
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
         <div class="container">
 
-
-
             <a class="navbar-brand fw-bold" href="/">
-
-                Piyush nagar
-
+                Piyush Nagar
             </a>
 
-
-
             <button
-
                 class="navbar-toggler"
-
                 type="button"
-
                 data-bs-toggle="collapse"
-
                 data-bs-target="#navbarMenu">
 
-
-
                 <span class="navbar-toggler-icon"></span>
-
-
 
             </button>
 
 
-
             <div class="collapse navbar-collapse" id="navbarMenu">
-
-
 
                 <ul class="navbar-nav ms-auto">
 
-
-
                     <li class="nav-item">
-
                         <a class="nav-link" href="/">
-
                             Home
-
                         </a>
-
                     </li>
 
-
-
-
-
-
                     <li class="nav-item">
-
                         <a class="nav-link" href="/skill/">
-
                             Skills
-
                         </a>
-
                     </li>
-
-
 
                     <li class="nav-item">
-
                         <a class="nav-link" href="/contact/">
-
                             Contact
-
                         </a>
-
                     </li>
-
-
 
                 </ul>
 
-
-
             </div>
 
-
-
         </div>
-
-
 
     </nav>
 
 
-
-
-
-    <!-- PAGE CONTENT -->
-
-
+    <!-- =====================================================
+         PAGE CONTENT
+         ===================================================== -->
 
     {% block content %}
-
     {% endblock %}
 
 
-
-
-
-    <!-- Bootstrap JavaScript -->
-
-
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+         ===================================================== -->
 
     <script
-
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-
     </script>
 
 
+    <!-- =====================================================
+         MOUSE LIGHT EFFECT
+         ===================================================== -->
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".card, .glass");
+
+    cards.forEach(card => {
+
+        card.addEventListener("mousemove", (event) => {
+
+            const rect = card.getBoundingClientRect();
+
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX =
+                ((y - centerY) / centerY) * -7;
+
+            const rotateY =
+                ((x - centerX) / centerX) * 7;
+
+            card.style.transform =
+                `perspective(900px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)
+                 translateY(-8px)`;
+
+        });
+
+
+        card.addEventListener("mouseleave", () => {
+
+            card.style.transform =
+                "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0)";
+
+        });
+
+    });
+
+});
+
+</script>
 
 </body>
-
-
 
 </html>
