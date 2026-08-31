@@ -8,156 +8,109 @@ Home | Piyush Portfolio
 
 <!-- ================= HERO ================= -->
 
-<section class="home-hero">
+<section class="hero page-shell">
 
-    <div class="container">
+    <div class="hero-content">
 
-        <div class="row align-items-center g-5">
+        <div class="eyebrow">
+            <span class="status-dot"></span>
+            Welcome to my portfolio
+        </div>
 
-            <!-- LEFT SIDE -->
+        <h1>
+            Hi, I'm
+            <span>Piyush</span>
+            <br>
+            <strong>Aspiring Web Developer</strong>
+        </h1>
 
-            <div class="col-lg-7">
+        <p class="hero-description">
+            I'm learning how to build modern websites and
+            web applications using HTML, CSS, Python and Django.
+        </p>
 
-                <div class="hero-content">
+        <p class="hero-secondary">
+            I enjoy learning new technologies, building things
+            from scratch and improving my development skills every day.
+        </p>
 
-                    <span class="badge hero-badge">
-                        👋 Welcome to my portfolio
-                    </span>
+        <!-- HERO BUTTONS -->
 
-                    <p class="hero-kicker">
-                        WEB DEVELOPMENT • PYTHON • DJANGO
-                    </p>
+        <div class="hero-buttons">
 
-                    <h1 class="hero-title">
-                        Hi, I'm
-                        <span class="hero-name">Piyush</span>
-                    </h1>
+            <a href="{% url 'skill' %}" class="hero-btn primary-btn">
+                Explore My Skills <span>→</span>
+            </a>
 
-                    <h2 class="hero-subtitle">
-                        Aspiring Web Developer
-                    </h2>
+            <a href="{% url 'contact' %}" class="hero-btn secondary-btn">
+                Contact Me
+            </a>
 
-                    <p class="hero-description">
-                        I'm learning how to build modern websites
-                        and web applications using HTML, CSS,
-                        Bootstrap, Python and Django.
-                    </p>
-
-                    <p class="hero-secondary">
-                        I enjoy learning new technologies,
-                        building things from scratch and improving
-                        my development skills every day.
-                    </p>
-
-
-                    <!-- BUTTONS -->
-
-                    <div class="hero-buttons">
-
-                        <a href="/skill/" class="btn btn-primary btn-lg">
-                            Explore My Skills →
-                        </a>
-
-                        <a href="/contact/" class="btn btn-outline-dark btn-lg">
-                            Contact Me
-                        </a>
-
-                    </div>
+        </div>
 
 
-                    <!-- STATS -->
+        <div class="hero-stats">
 
-                    <div class="hero-stats">
-
-                        <div class="hero-stat">
-                            <strong>HTML</strong>
-                            <span>Frontend</span>
-                        </div>
-
-                        <div class="hero-stat">
-                            <strong>Python</strong>
-                            <span>Programming</span>
-                        </div>
-
-                        <div class="hero-stat">
-                            <strong>Django</strong>
-                            <span>Backend</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div>
+                <strong>HTML</strong>
+                <span>Frontend</span>
             </div>
 
+            <div>
+                <strong>CSS</strong>
+                <span>Design</span>
+            </div>
 
-            <!-- RIGHT SIDE -->
+            <div>
+                <strong>Python</strong>
+                <span>Programming</span>
+            </div>
 
-            <div class="col-lg-5">
+            <div>
+                <strong>Django</strong>
+                <span>Backend</span>
+            </div>
 
-                <div class="hero-visual">
+        </div>
 
-                    <div class="hero-orbit hero-orbit-1"></div>
-                    <div class="hero-orbit hero-orbit-2"></div>
-
-                    <div class="hero-glow"></div>
-
-
-                    <!-- 3D GLASS CARD -->
-
-                    <div class="hero-3d-card glass">
-
-                        <div class="hero-card-top">
-
-                            <span class="status-dot"></span>
-
-                            <span>PIYUSH.DEV</span>
-
-                            <span class="hero-card-dots">
-                                •••
-                            </span>
-
-                        </div>
+    </div>
 
 
-                        <div class="hero-avatar">
-                            👨‍💻
-                        </div>
+    <!-- ================= RIGHT GLASS CARD ================= -->
 
+    <div class="hero-visual">
 
-                        <h3>
-                            Developer in Progress
-                        </h3>
+        <div class="developer-card glass">
 
-                        <p>
-                            Learning • Building • Improving
-                        </p>
+            <div class="card-orb"></div>
 
+            <div class="developer-icon">
+                👨‍💻
+            </div>
 
-                        <div class="hero-code-box">
+            <span class="card-label">
+                CURRENT STATUS
+            </span>
 
-                            <span>&lt;</span>
-                            <b>create</b>
-                            <span>future</span>
-                            <span>/&gt;</span>
+            <h2>
+                Developer
+                <br>
+                <span>in Progress</span>
+            </h2>
 
-                        </div>
+            <p>
+                Learning • Building • Improving
+            </p>
 
+            <div class="card-line"></div>
 
-                        <div class="hero-card-line"></div>
+            <div class="card-bottom">
 
+                <span class="online-dot"></span>
 
-                        <div class="hero-floating-tag tag-one">
-                            🐍 Python
-                        </div>
-
-                        <div class="hero-floating-tag tag-two">
-                            ⚡ Django
-                        </div>
-
-                    </div>
-
-                </div>
+                <span>
+                    Currently learning
+                </span>
 
             </div>
 
@@ -170,97 +123,117 @@ Home | Piyush Portfolio
 
 <!-- ================= ABOUT ================= -->
 
-<section class="py-5">
+<section class="section">
 
-    <div class="container">
+    <div class="page-shell">
 
-        <div class="row align-items-center g-5">
+        <div class="section-grid">
 
-            <div class="col-lg-7">
+            <div class="section-content">
 
-                <span class="section-kicker text-primary">
+                <span class="eyebrow">
                     ABOUT ME
                 </span>
 
-                <h2 class="display-5 fw-bold mt-2">
-                    A little about me
+                <h2>
+                    A little
+                    <span>about me.</span>
                 </h2>
 
-                <p class="fs-5 mt-4">
+                <p class="lead-text">
                     I'm currently learning web development
                     and working on understanding both the
                     frontend and backend sides of websites.
                 </p>
 
-                <p class="text-secondary">
+                <p>
                     On the frontend, I'm learning how to create
                     structured pages with HTML, style them with
-                    CSS and build responsive interfaces using
-                    Bootstrap.
+                    CSS and build responsive interfaces.
                 </p>
 
-                <p class="text-secondary">
+                <p>
                     On the backend, I'm learning Python and
                     Django to understand how websites handle
                     data, URLs, views and dynamic content.
                 </p>
 
-                <a href="/skill/" class="btn btn-primary mt-2">
-                    View My Skills →
+                <a href="{% url 'skill' %}" class="text-button">
+                    View My Skills
+                    <span>→</span>
                 </a>
 
             </div>
 
 
-            <div class="col-lg-5">
+            <!-- INFO -->
 
-                <div class="card info-glass-card border-0">
+            <div class="glass info-card">
 
-                    <div class="card-body p-4">
+                <div class="info-card-header">
 
-                        <div class="card-heading">
+                    <span class="eyebrow">
+                        QUICK INFO
+                    </span>
 
-                            <span class="card-heading-icon">
-                                ✦
-                            </span>
+                    <span class="info-number">
+                        01
+                    </span>
 
-                            <h4 class="fw-bold mb-0">
-                                Quick Information
-                            </h4>
-
-                        </div>
+                </div>
 
 
-                        <div class="quick-info">
+                <div class="info-item">
 
-                            <div class="info-row">
-                                <small>NAME</small>
-                                <h5>Piyush</h5>
-                            </div>
+                    <span>NAME</span>
 
-                            <div class="info-row">
-                                <small>FOCUS</small>
-                                <h5>Web Development</h5>
-                            </div>
+                    <strong>
+                        Piyush Nagar
+                    </strong>
 
-                            <div class="info-row">
-                                <small>FRONTEND</small>
-                                <h5>HTML • CSS • Bootstrap</h5>
-                            </div>
+                </div>
 
-                            <div class="info-row">
-                                <small>BACKEND</small>
-                                <h5>Python • Django</h5>
-                            </div>
 
-                            <div class="info-row">
-                                <small>INTEREST</small>
-                                <h5>Artificial Intelligence</h5>
-                            </div>
+                <div class="info-item">
 
-                        </div>
+                    <span>FOCUS</span>
 
-                    </div>
+                    <strong>
+                        Web Development
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>FRONTEND</span>
+
+                    <strong>
+                        HTML • CSS
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>BACKEND</span>
+
+                    <strong>
+                        Python • Django
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span>INTEREST</span>
+
+                    <strong>
+                        Artificial Intelligence
+                    </strong>
 
                 </div>
 
@@ -275,132 +248,143 @@ Home | Piyush Portfolio
 
 <!-- ================= LEARNING ================= -->
 
-<section class="py-5">
+<section class="section learning-section">
 
-    <div class="container">
+    <div class="page-shell">
 
-        <div class="text-center mb-5">
+        <div class="center-heading">
 
-            <span class="section-kicker text-primary">
+            <span class="eyebrow">
                 MY LEARNING
             </span>
 
-            <h2 class="display-5 fw-bold mt-2">
-                What I'm Learning
+            <h2>
+                What I'm
+                <span>Learning.</span>
             </h2>
 
-            <p class="lead text-secondary">
+            <p>
                 Technologies I'm currently exploring
+                through projects and practice.
             </p>
 
         </div>
 
 
-        <div class="row g-4">
+        <div class="learning-grid">
 
 
-            <div class="col-md-6 col-lg-3">
+            <!-- HTML -->
 
-                <div class="card skill-card h-100 border-0">
+            <div class="glass learning-card">
 
-                    <div class="card-body text-center p-4">
-
-                        <div class="skill-icon">
-                            🌐
-                        </div>
-
-                        <h4 class="fw-bold">
-                            HTML
-                        </h4>
-
-                        <p class="text-secondary">
-                            Building the structure and
-                            content of websites.
-                        </p>
-
-                    </div>
-
+                <div class="learning-icon">
+                    🌐
                 </div>
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <h3>
+                    HTML
+                </h3>
+
+                <p>
+                    Building the structure and
+                    content of modern websites.
+                </p>
+
+                <span class="skill-tag">
+                    FRONTEND
+                </span>
 
             </div>
 
 
-            <div class="col-md-6 col-lg-3">
+            <!-- CSS -->
 
-                <div class="card skill-card h-100 border-0">
+            <div class="glass learning-card">
 
-                    <div class="card-body text-center p-4">
-
-                        <div class="skill-icon">
-                            🎨
-                        </div>
-
-                        <h4 class="fw-bold">
-                            CSS
-                        </h4>
-
-                        <p class="text-secondary">
-                            Designing and styling
-                            web pages.
-                        </p>
-
-                    </div>
-
+                <div class="learning-icon">
+                    🎨
                 </div>
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <h3>
+                    CSS
+                </h3>
+
+                <p>
+                    Designing and styling
+                    beautiful responsive interfaces.
+                </p>
+
+                <span class="skill-tag">
+                    DESIGN
+                </span>
 
             </div>
 
 
-            <div class="col-md-6 col-lg-3">
+            <!-- PYTHON -->
 
-                <div class="card skill-card h-100 border-0">
+            <div class="glass learning-card">
 
-                    <div class="card-body text-center p-4">
-
-                        <div class="skill-icon">
-                            🅱️
-                        </div>
-
-                        <h4 class="fw-bold">
-                            Bootstrap
-                        </h4>
-
-                        <p class="text-secondary">
-                            Creating responsive
-                            interfaces.
-                        </p>
-
-                    </div>
-
+                <div class="learning-icon">
+                    🐍
                 </div>
+
+                <span class="card-number">
+                    03
+                </span>
+
+                <h3>
+                    Python
+                </h3>
+
+                <p>
+                    Learning programming,
+                    backend development and AI.
+                </p>
+
+                <span class="skill-tag">
+                    PROGRAMMING
+                </span>
 
             </div>
 
 
-            <div class="col-md-6 col-lg-3">
+            <!-- DJANGO -->
 
-                <div class="card skill-card h-100 border-0">
+            <div class="glass learning-card">
 
-                    <div class="card-body text-center p-4">
-
-                        <div class="skill-icon">
-                            🐍
-                        </div>
-
-                        <h4 class="fw-bold">
-                            Python
-                        </h4>
-
-                        <p class="text-secondary">
-                            Learning programming,
-                            backend and AI.
-                        </p>
-
-                    </div>
-
+                <div class="learning-icon">
+                    ◆
                 </div>
 
+                <span class="card-number">
+                    04
+                </span>
+
+                <h3>
+                    Django
+                </h3>
+
+                <p>
+                    Learning to build dynamic
+                    and powerful web applications.
+                </p>
+
+                <span class="skill-tag">
+                    BACKEND
+                </span>
+
             </div>
+
 
         </div>
 
@@ -411,84 +395,78 @@ Home | Piyush Portfolio
 
 <!-- ================= DJANGO ================= -->
 
-<section class="py-5">
+<section class="section">
 
-    <div class="container">
+    <div class="page-shell">
 
-        <div class="row align-items-center g-5">
+        <div class="backend-grid">
 
-            <div class="col-lg-6">
 
-                <span class="section-kicker text-primary">
+            <div>
+
+                <span class="eyebrow">
                     BACKEND
                 </span>
 
-                <h2 class="display-5 fw-bold mt-2">
-                    Learning Django
+                <h2>
+                    Learning
+                    <span>Django.</span>
                 </h2>
 
-                <p class="lead mt-4">
-                    Django is helping me understand how
-                    the backend of a website works.
+                <p class="lead-text">
+                    Django is helping me understand
+                    how the backend of a website works.
                 </p>
 
-                <p class="text-secondary">
+                <p>
                     I'm learning concepts such as URLs,
                     views, templates and how Django connects
                     different pages together.
                 </p>
 
-                <a href="/skill/" class="btn btn-primary">
+                <a href="{% url 'skill' %}" class="btn btn-primary">
                     See All Skills
+                    <span>→</span>
                 </a>
 
             </div>
 
 
-            <div class="col-lg-6">
+            <!-- STACK CARD -->
 
-                <div class="card stack-card border-0">
+            <div class="glass stack-card">
 
-                    <div class="card-body p-4">
+                <div class="stack-header">
 
-                        <div class="card-heading">
+                    <span>
+                        MY CURRENT STACK
+                    </span>
 
-                            <span class="card-heading-icon">
-                                ⚡
-                            </span>
+                    <span>
+                        05
+                    </span>
 
-                            <h4 class="fw-bold mb-0">
-                                My Current Stack
-                            </h4>
-
-                        </div>
+                </div>
 
 
-                        <div class="d-flex flex-wrap gap-2 mt-4">
+                <div class="stack-list">
 
-                            <span class="badge stack-badge">
-                                HTML
-                            </span>
+                    <span>HTML</span>
 
-                            <span class="badge stack-badge">
-                                CSS
-                            </span>
+                    <span>CSS</span>
 
-                            <span class="badge stack-badge">
-                                Bootstrap
-                            </span>
+                    <span>Python</span>
 
-                            <span class="badge stack-badge">
-                                Python
-                            </span>
+                    <span>Django</span>
 
-                            <span class="badge stack-badge">
-                                Django
-                            </span>
+                </div>
 
-                        </div>
 
-                    </div>
+                <div class="stack-status">
+
+                    <span class="online-dot"></span>
+
+                    Learning & building
 
                 </div>
 
@@ -503,29 +481,36 @@ Home | Piyush Portfolio
 
 <!-- ================= GOAL ================= -->
 
-<section class="py-5">
+<section class="goal-section">
 
-    <div class="container">
+    <div class="page-shell">
 
-        <div class="goal-glass text-center">
+        <div class="glass goal-card">
 
-            <span class="section-kicker text-primary">
+            <div class="goal-number">
+                05
+            </div>
+
+            <span class="eyebrow">
                 MY GOAL
             </span>
 
-            <h2 class="display-5 fw-bold mt-2">
-                Keep Learning & Keep Building
+            <h2>
+                Keep Learning.
+                <br>
+                <span>Keep Building.</span>
             </h2>
 
-            <p class="lead text-secondary mx-auto mt-4 goal-text">
+            <p>
                 My goal is to continuously improve my
                 programming and web development skills,
                 build useful projects and eventually
                 explore more advanced technologies.
             </p>
 
-            <a href="/contact/" class="btn btn-primary btn-lg mt-3">
+            <a href="{% url 'contact' %}" class="btn btn-primary">
                 Get In Touch
+                <span>→</span>
             </a>
 
         </div>

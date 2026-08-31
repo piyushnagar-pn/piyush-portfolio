@@ -6,75 +6,170 @@ About | Piyush
 
 {% block content %}
 
-<div class="container py-5">
+<section class="inner-page page-shell">
 
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">About Me</h1>
-        <p class="lead text-secondary">
-            Get to know me
+    <!-- ================= HEADER ================= -->
+
+    <div class="center-heading">
+
+        <span class="eyebrow">
+            ABOUT ME
+        </span>
+
+        <h1>
+            Get to know
+            <span>me.</span>
+        </h1>
+
+        <p>
+            A little about who I am, what I'm learning,
+            and where I want to go.
         </p>
+
     </div>
 
-    <div class="row align-items-center">
 
-        <!-- About Text -->
-        <div class="col-lg-7">
+    <!-- ================= ABOUT GRID ================= -->
 
-            <h2 class="fw-bold mb-3">
-                Hi, I'm Piyush 👋
+    <div class="about-page-grid">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="glass about-main-card">
+
+            <div class="about-number">
+                01
+            </div>
+
+            <div class="about-icon">
+                👋
+            </div>
+
+            <h2>
+                Hi, I'm
+                <span>Piyush.</span>
             </h2>
 
-            <p class="fs-5">
-                I'm currently learning web development and building my
-                skills with HTML, CSS, Bootstrap, Python and Django.
+            <p class="about-lead">
+                I'm currently learning web development and
+                building my skills with HTML, CSS, Python
+                and Django.
             </p>
 
-            <p class="fs-5">
-                I enjoy learning how websites work and creating clean,
-                responsive and useful web applications.
+            <p>
+                I enjoy learning how websites work and
+                creating clean, responsive and useful
+                web applications.
             </p>
 
-            <p class="fs-5">
-                I'm also interested in Artificial Intelligence and
-                plan to explore more advanced technologies as I continue
-                learning.
+            <p>
+                I'm also interested in Artificial Intelligence
+                and plan to explore more advanced technologies
+                as I continue learning.
             </p>
+
+            <div class="about-divider"></div>
+
+            <div class="about-tags">
+
+                <span>Web Development</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>AI</span>
+
+            </div>
 
         </div>
 
 
-        <!-- Information Card -->
-        <div class="col-lg-5 mt-4 mt-lg-0">
+        <!-- RIGHT INFORMATION -->
 
-            <div class="card shadow-sm border-0">
+        <div class="glass about-info-card">
 
-                <div class="card-body p-4">
+            <div class="info-card-header">
 
-                    <h4 class="fw-bold mb-4">
+                <div>
+
+                    <span class="eyebrow">
+                        PROFILE
+                    </span>
+
+                    <h3>
                         My Information
-                    </h4>
-
-                    <p>
-                        <strong>Name:</strong> Piyush
-                    </p>
-
-                    <p>
-                        <strong>Learning:</strong> Web Development
-                    </p>
-
-                    <p>
-                        <strong>Backend:</strong> Python & Django
-                    </p>
-
-                    <p>
-                        <strong>Frontend:</strong> HTML, CSS & Bootstrap
-                    </p>
-
-                    <p class="mb-0">
-                        <strong>Goal:</strong> Become a skilled developer
-                    </p>
+                    </h3>
 
                 </div>
+
+                <span class="info-number">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>NAME</span>
+
+                <strong>
+                    Piyush Nagar
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>FOCUS</span>
+
+                <strong>
+                    Web Development
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>FRONTEND</span>
+
+                <strong>
+                    HTML • CSS
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>BACKEND</span>
+
+                <strong>
+                    Python • Django
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item">
+
+                <span>INTEREST</span>
+
+                <strong>
+                    Artificial Intelligence
+                </strong>
+
+            </div>
+
+
+            <div class="profile-item last">
+
+                <span>GOAL</span>
+
+                <strong>
+                    Become a skilled developer
+                </strong>
 
             </div>
 
@@ -82,6 +177,31 @@ About | Piyush
 
     </div>
 
-</div>
+
+    <!-- ================= BOTTOM CARD ================= -->
+
+    <div class="glass about-bottom-card">
+
+        <div>
+
+            <span class="eyebrow">
+                CURRENT MINDSET
+            </span>
+
+            <h2>
+                Learn something.
+                <span>Build something.</span>
+            </h2>
+
+        </div>
+
+        <p>
+            Every project is a chance to learn something new
+            and improve my development skills.
+        </p>
+
+    </div>
+
+</section>
 
 {% endblock %}

@@ -1,126 +1,153 @@
 {% extends "base.html" %}
 
 {% block title %}
-Contact | Piyush Portfolio
+Contact | Piyush
 {% endblock %}
 
 {% block content %}
 
-<section class="contact-page">
+<section class="inner-page page-shell">
 
-    <div class="container">
+    <!-- ================= HEADER ================= -->
 
-        <!-- HEADER -->
+    <div class="center-heading">
 
-        <div class="contact-header text-center">
+        <span class="eyebrow">
+            CONTACT
+        </span>
 
-            <span class="section-kicker">
-                GET IN TOUCH
-            </span>
+        <h1>
+            Let's
+            <span>connect.</span>
+        </h1>
 
-            <h1>
-                Let's <span>Connect</span>
-            </h1>
+        <p>
+            Have a question, idea or just want to say hello?
+            Feel free to reach out.
+        </p>
 
-            <p>
-                Want to connect or have an idea?
-                Feel free to reach me through the options below.
-            </p>
-
-        </div>
-
-
-        <!-- CONTACT CARDS -->
-
-        <div class="row justify-content-center g-4">
+    </div>
 
 
-            <!-- EMAIL -->
+    <!-- ================= CONTACT CARDS ================= -->
 
-            <div class="col-md-6 col-lg-5">
+    <div class="contact-grid">
 
-                <div class="contact-simple-card">
 
-                    <div class="contact-simple-icon">
-                        ✉️
-                    </div>
+        <!-- EMAIL -->
 
-                    <span>
-                        EMAIL
-                    </span>
+        <div class="glass contact-card">
 
-                    <h3>
-                        Email Me
-                    </h3>
+            <div class="contact-top">
 
-                    <p>
-                        For questions, ideas or collaboration,
-                        you can reach me through email.
-                    </p>
-
-                    <a href="mailto:piyushnagar.pn@gmail.com">
-                        piyushnagar.pn@gmail.com
-                    </a>
-
+                <div class="contact-icon">
+                    📧
                 </div>
+
+                <span class="contact-number">
+                    01
+                </span>
 
             </div>
 
 
-            <!-- WHATSAPP -->
-
-            <div class="col-md-6 col-lg-5">
-
-                <div class="contact-simple-card">
-
-                    <div class="contact-simple-icon">
-                        💬
-                    </div>
-
-                    <span>
-                        WHATSAPP
-                    </span>
-
-                    <h3>
-                        Chat With Me
-                    </h3>
-
-                    <p>
-                        You can contact me directly on WhatsApp
-                        for a quick conversation.
-                    </p>
-
-                    <a
-                        href="https://wa.me/917340270051"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        +91 7340270051 →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- BOTTOM GLASS -->
-
-        <div class="contact-bottom-glass text-center">
-
-            <span class="section-kicker">
-                PIYUSH.DEV
+            <span class="contact-label">
+                EMAIL
             </span>
 
             <h2>
-                Keep Learning.
-                Keep Building.
+                Email Me
             </h2>
 
             <p>
-                Thanks for visiting my portfolio.
+                You can reach me directly through email.
             </p>
+
+            <div class="contact-detail">
+                piyushnagar.pn@gmail.com
+            </div>
+
+
+            <a
+                href="mailto:piyushnagar.pn@gmail.com"
+                class="btn btn-primary contact-button">
+
+                Send Email
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+
+        <!-- WHATSAPP -->
+
+        <div class="glass contact-card">
+
+            <div class="contact-top">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <span class="contact-number">
+                    02
+                </span>
+
+            </div>
+
+
+            <span class="contact-label">
+                WHATSAPP
+            </span>
+
+            <h2>
+                Message Me
+            </h2>
+
+            <p>
+                Prefer messaging? You can contact me
+                directly on WhatsApp.
+            </p>
+
+            <div class="contact-detail">
+                +91 73402 70051
+            </div>
+
+
+            <a
+                href="https://wa.me/917340270051"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp contact-button">
+
+                Open WhatsApp
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BOTTOM ================= -->
+
+    <div class="glass contact-bottom">
+
+        <div class="contact-bottom-icon">
+            ✦
+        </div>
+
+        <div>
+
+            <span class="eyebrow">
+                OPEN TO CONNECT
+            </span>
+
+            <h3>
+                I'm always happy to hear from you.
+            </h3>
 
         </div>
 
